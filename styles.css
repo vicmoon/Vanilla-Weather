@@ -1,0 +1,13 @@
+.weather-app{
+    margin:30px auto;
+    max-width: 600px;
+    border: 1px solid #dadde1;
+    padding:20px;
+    border-radius: 10px;
+
+}
+h1{
+    color:red;
+    font-size: 30px;
+    font-weight: 100px;
+}
