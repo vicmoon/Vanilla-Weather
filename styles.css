@@ -4,7 +4,7 @@
     font-weight: 100px;
 }
 ul {
-    margin 0;
+    margin: 0;
     padding: 0;
 } 
 
@@ -12,7 +12,7 @@ li {
     list-style: none ;
     margin:0;
     padding: 0;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 18px;
 }
 
@@ -20,7 +20,8 @@ li {
     margin:30px auto;
     max-width: 600px;
     border: 1px solid #dadde1;
-    padding:20px;
+    padding: 20px;
+    padding-bottom: 10px;
     border-radius: 10px;
 }
 
@@ -42,4 +43,5 @@ li {
 .footer {
     margin: 0 auto;
     max-width: 600px;
+    padding-top: 0px;
 }
