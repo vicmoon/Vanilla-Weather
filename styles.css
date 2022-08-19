@@ -20,7 +20,7 @@ li {
     margin:30px auto;
     max-width: 600px;
     border: 1px solid #dadde1;
-    padding:30px;
+    padding:20px;
     border-radius: 10px;
 }
 
@@ -28,6 +28,18 @@ li {
     margin:30px auto;
     max-width: 600px;
 }
-small {
-    padding-top: 20px;
+.weather-temperature img{
+    margin-right: 10px;
+}
+.weather-temperature strong{
+   color: rgb(33 33 33);
+   font-size: 64px;
+   font-weight: 400;
+   height: auto;
+   line-height: 64px;
+
+}
+.footer {
+    margin: 0 auto;
+    max-width: 600px;
 }
