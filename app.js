@@ -14,10 +14,26 @@ function formatDate(timestamp){
 
     return `${day} ${hours} : ${minutes}`
 }
+function search(city){
+    let apiKey ="a797ee45374c07f8f53469ef56ba3a8c"; 
+    let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature); 
+
+
+}
+function searchForm(event){
+   event.preventDefault();
+
+   let cityInputElement=document.querySelector("#input-city");
+   search(cityInputElement.value);
+   console.log(cityInputElement.value);
+}
+
+search("Prague");
 
 
 function displayTemperature(response){
-    console.log(response.data);
+   
 let temperatureElement=document.querySelector("#temperature");
 let cityElement=document.querySelector("#your-city");
 let descriptionElement=document.querySelector("#description");
@@ -43,9 +59,5 @@ iconElement.setAttribute(
 }
 
 
-let apiKey ="a797ee45374c07f8f53469ef56ba3a8c"; 
-let city ="Lisbon";
-let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-
-axios.get(apiUrl).then(displayTemperature); 
+let form=document.querySelector("#search-form");
+form.addEventListener("submit", searchForm);

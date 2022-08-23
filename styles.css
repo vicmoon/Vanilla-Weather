@@ -49,3 +49,7 @@ li:first-letter{
     max-width: 600px;
     padding-top: 0px;
 }
+
+.row {
+    margin:20px auto;
+}
