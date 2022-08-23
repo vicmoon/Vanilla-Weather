@@ -15,6 +15,18 @@ function formatDate(timestamp){
     return `${day} ${hours} : ${minutes}`
 }
 
+function showFahreheit(event){
+    event.preventDefault(); 
+    let temperatureElement=document.querySelector("#temperature");
+    let fahrenheitTemp= (celsiusTemp*9)/5+32;
+    temperatureElement.innerHTML= Math.round(fahrenheitTemp);
+}
+
+function showCelsius(event){
+    event.preventDefault();
+    let temperatureElement=document.querySelector("#temperature");
+    temperatureElement=Math.round(celsiusTemp);
+}
 
 
 
@@ -33,7 +45,6 @@ function searchForm(event){
    console.log(cityInputElement.value);
 }
 
-search("Prague");
 
 
 function displayTemperature(response){
@@ -47,8 +58,10 @@ let windElement=document.querySelector("#wind");
 let dateElement=document.querySelector("#date");
 let iconElement=document.querySelector("#icon");
 
+celsiusTemp = response.data.main.temp;
+
 descriptionElement.innerHTML=response.data.weather[0].description;
-temperatureElement.innerHTML=Math.round(response.data.main.temp);
+temperatureElement.innerHTML=Math.round(celsiusTemp);
 cityElement.innerHTML=response.data.name;
 humidityElement.innerHTML=response.data.main.humidity;
 windElement.innerHTML=Math.round(response.data.wind.speed);
@@ -63,17 +76,16 @@ iconElement.setAttribute(
 
 }
 
+
+let celsiusTemp = null;
+
 let form=document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
 
-
-function showFahreheit(event){
-    event.preventDefault();
-    let fahrenheitTemp= (16*9)/5+32;
-    let temperatureElement=document.querySelector("#temperature");
-    temperatureElement.innerHTML= Math.round(fahrenheitTemp);
-}
-
-
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click" , showFahreheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius );
+
+search("Prague");
