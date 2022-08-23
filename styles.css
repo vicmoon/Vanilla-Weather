@@ -1,8 +1,10 @@
 .city{
-    color:rgb(111, 104, 104);
+    color:#2147D3;
     font-size: 30px;
     font-weight: 100px;
+    
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -12,34 +14,41 @@ li {
     list-style: none ;
     margin:0;
     padding: 0;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 18px;
-    
+    color:#081134;
 }
 li:first-letter{
     text-transform: capitalize;
 }
-
 .weather-app{
     margin:30px auto;
     max-width: 600px;
-    border: 1px solid #dadde1;
-    padding: 20px;
+    border: 1px solid #2147D3;
+    padding: 30px;
     padding-bottom: 10px;
     border-radius: 10px;
+    background-image: url(test13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    height: 400px;
+ 
 }
 
 .wrapper {
-    margin:30px auto;
-    max-width: 600px;
+    margin:40px auto;
+ 
+    
 }
 .weather-temperature img{
     margin-right: 10px;
 }
+
 .weather-temperature strong{
-   color: rgb(33 33 33);
+   color: #2147D3;
    font-size: 64px;
-   font-weight: 400;
+   font-weight: 500;
    height: auto;
    line-height: 64px;
 }
@@ -48,6 +57,7 @@ li:first-letter{
  color: rgb(33 33 33);
  cursor:default;
 }
+
 .weather-temperature .active:hover{
     text-decoration: none;
 }
