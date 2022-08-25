@@ -23,7 +23,6 @@ li:first-letter{
 }
 .weather-app{
     margin:30px auto;
-    max-width: 600px;
     border: 1px solid #2147D3;
     padding: 30px;
     padding-bottom: 10px;
@@ -32,7 +31,8 @@ li:first-letter{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
-    height: 390px;
+    width: 700px;
+    height: 500px;
  
 }
 
@@ -70,4 +70,17 @@ li:first-letter{
 
 .row {
     margin:20px auto;
+}
+
+.forecast {
+    text-align: center;
+    line-height: 10px;
+    margin-left: 30px;
+}
+.forecast-date {
+    font-size: 15px;
+
+}
+.forecast-temperature{
+    font-size: 13px;
 }
