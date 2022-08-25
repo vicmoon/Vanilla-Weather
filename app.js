@@ -17,6 +17,7 @@ function formatDate(timestamp){
     return `${day} ${hours} : ${minutes}`
 }
 
+
 function  showDate(timestamp) {
 
  let date   =new Date(timestamp *1000); 
@@ -47,7 +48,7 @@ function displayForecast(response){
           <div class="forecast-temperature"> 
           <span class="max-temperature">${Math.round(
             forecastDay.temp.max)}°</span>
-          <span class="min-forecast" > ${Math.round(
+          <span class="min-temperature" > ${Math.round(
             forecastDay.temp.min)}°</span>
           </div>
         </div>
@@ -134,15 +135,9 @@ function showCelsius(event){
 }
 
 
-let celsiusTemp = null;
 
 let form=document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
 
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click" , showFahreheit);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showCelsius );
 
 search("Prague");

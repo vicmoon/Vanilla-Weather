@@ -84,3 +84,7 @@ li:first-letter{
 .forecast-temperature{
     font-size: 13px;
 }
+
+.min-temperature{
+    opacity: 0.50;
+}
