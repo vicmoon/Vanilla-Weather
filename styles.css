@@ -1,5 +1,5 @@
 .city{
-    color:#2147D3;
+    color:white;
     font-size: 40px;
     font-weight: 100px;
     
@@ -10,24 +10,31 @@ ul {
     padding: 0;
 } 
 
-li {
+ ul {
     list-style: none ;
-    margin:0;
     padding: 0;
     font-size: 20px;
     line-height: 18px;
-    color:#081134;
+    color:white;
+ }
+
+ .temp-details {
+    position: relative;
+    left: 55px;
 }
+
 li:first-letter{
     text-transform: capitalize;
 }
 .weather-app{
     margin:30px auto;
     border: 1px solid #2147D3;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     padding: 30px;
     padding-bottom: 10px;
     border-radius: 10px;
-    background-image: url(retro.jpg);
+    background-image: url(stars.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
@@ -38,6 +45,7 @@ li:first-letter{
 
 .wrapper {
     margin:40px auto;
+
  
     
 }
@@ -51,20 +59,13 @@ li:first-letter{
    font-weight: 500;
    height: auto;
    line-height: 64px;
+   color: white;
 }
 
-.weather-temperature .active {
- color: rgb(33 33 33);
- cursor:default;
-}
-
-.weather-temperature .active:hover{
-    text-decoration: none;
-}
 
 .footer {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     padding-top: 0px;
 }
 
@@ -75,7 +76,8 @@ li:first-letter{
 .forecast {
     text-align: center;
     line-height: 10px;
-    margin-left: 30px;
+  
+    color: white;
 }
 .forecast-date {
     font-size: 15px;
@@ -85,6 +87,3 @@ li:first-letter{
     font-size: 13px;
 }
 
-.min-temperature{
-    opacity: 0.50;
-}

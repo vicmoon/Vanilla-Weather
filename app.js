@@ -30,7 +30,7 @@ function  showDate(timestamp) {
 
 
 function displayForecast(response){
-    console.log(response.data.daily);
+ 
 
     let forecast =response.data.daily;
 
@@ -65,7 +65,6 @@ function getForecast(coordinates) {
 
  let apiKey ="a797ee45374c07f8f53469ef56ba3a8c"; 
  let apiURL =`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-console.log(apiURL);
 axios.get(apiURL).then(displayForecast);
 }
 
